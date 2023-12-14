@@ -9,8 +9,7 @@ function isTheLinkValid(string $link)
     $unacceptables = array('https:', '.doc', '.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
 
     foreach ($unacceptables as $unacceptable) {
-
-        // change ==true to !==false to ensure that the condition is true when the substring is found in the link
+        //change ==true to !==false to ensure that the condition is true when the substring is found in the link
         if (strpos($link, $unacceptable) !== false) {
             return false;
         }
