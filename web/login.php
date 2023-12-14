@@ -6,8 +6,8 @@ $database_user = 'root';
 $database_password = '';
 $database_name = 'web';
 
-$username = 'user';
-$password = 'user12345';
+$username = $_POST['username'];
+$password = $_POST['password'];
 
 // initialize $result to avoid variable scope errors
 $result = ['status' => false];
