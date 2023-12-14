@@ -1,4 +1,6 @@
 <?php
+// add session to allow authentication in deletion
+session_start();
 
 // add random credentials for test (consider environment variables in large projects)
 $database_host = 'localhost';
@@ -6,8 +8,9 @@ $database_user = 'root';
 $database_password = '';
 $database_name = 'web';
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+$username = 'user';
+$password = 'user12345';
+
 
 // initialize $result to avoid variable scope errors
 $result = ['status' => false];
